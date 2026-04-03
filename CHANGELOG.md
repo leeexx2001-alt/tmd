@@ -21,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `profile.json` - 完整资料 JSON
 
 **新特性：**
-- **去重下载**：基于 MD5 校验，文件未变更时自动跳过
+- **去重下载**：基于 MD5 校验，profile文件未变更时自动跳过
 - **版本管理**：资料变更时自动备份到 `.versions/` 目录
 - **批量下载**：支持并发下载多个用户资料
 - **智能复用**：从推文下载中复用已获取的用户数据，避免重复 API 调用
