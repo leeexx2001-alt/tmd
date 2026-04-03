@@ -44,6 +44,11 @@ users/{UserName(screenName)}/.loongtweet/.profile/
 - `storage.go` (183 行) - 文件存储管理器，支持版本管理
 - `types.go` (158 行) - 类型定义和接口
 
+#### 推文 JSON 保存
+- 推文完整信息保存为格式化 JSON 到 `.loongtweet/` 目录
+- 即使下载失败也能记录推文信息，便于调试
+- 使用 `TweetFileName()` 生成一致的文件名
+
 #### 命令行参数扩展
 | 参数 | 类型 | 说明 |
 |------|------|------|
@@ -79,11 +84,6 @@ users/{UserName(screenName)}/.loongtweet/.profile/
 - `CopyFile(src, dst)` - 文件复制工具
 - `MaxFileNameLen` - 可配置的文件名长度限制（默认 155，范围 50-250）
 - `WinFileName()` - Windows 文件名清理（移除非法字符）
-
-#### 推文 JSON 保存
-- 推文完整信息保存为格式化 JSON 到 `.loongtweet/` 目录
-- 即使下载失败也能记录推文信息，便于调试
-- 使用 `TweetFileName()` 生成一致的文件名
 
 #### 依赖更新
 **新增依赖：**
