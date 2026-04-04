@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-#### Profile 下载功能 (核心新功能)
+#### Profile 下载功能
 完整的用户资料下载系统，支持批量下载和版本管理：
 
 **下载内容：**
